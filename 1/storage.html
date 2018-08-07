@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//iframe的东西
+		window.addEventListener("message",function(e){
+			console.log(e.source);
+			if(e.source !== window.parent){
+				return;
+			}
+			alert(e.data);
+			if(data.key){
+				localStorage.setItem(e.data.key,e.data.value);
+			}
+			
+		});
+		//顺便做个通信
+		window.onload=function(){
+			top.postMessage('test2', 'http://localhost:8080')
+		}
+	</script>
+</body>
+</html>

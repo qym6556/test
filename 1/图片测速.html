@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>利用图片测网速</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		let fileSize=6.79//kb
+		let i = new Image();
+		i.src ="https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png?where=super";
+		let s = Date.now();
+		i.onload = function(){
+			let e = Date.now();
+			let speed=Math.round(fileSize*1000/(e-s));//kb/s
+			document.write("当前网速为"+speed+"kb/s")
+		}
+	</script>
+	<script type="text/javascript">
+		//数据报
+		let i2 = new Image();
+		i2.src="https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png?id=1&username=123";//通过图片将统计数据发到后台，后台将日志提取过滤出需要的统计数据
+		//类似做法
+		navigator.sendBeacon('a.php');//
+	</script>
+</body>
+</html>
