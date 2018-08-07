@@ -6,7 +6,10 @@
 	<title></title>
 	<style type="text/css">
 		.test{
-			background-image: url("javascipt:alert(123)");
+			background-image: url("javascipt:alert(123);");
+		}
+		.test::after{
+			content:url("javascipt:alert(123);");
 		}
 	</style>
 </head>

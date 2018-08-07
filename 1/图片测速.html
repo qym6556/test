@@ -10,6 +10,7 @@
 	<script type="text/javascript">
 		let fileSize=6.79//kb
 		let i = new Image();
+		i.crossOrigin="anonymous";
 		i.src ="https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png?where=super";
 		let s = Date.now();
 		i.onload = function(){
@@ -25,5 +26,6 @@
 		//类似做法
 		navigator.sendBeacon('a.php');//
 	</script>
+	
 </body>
 </html>

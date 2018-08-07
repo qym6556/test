@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>语义化</h1>
+	<header id="header" class="">
+		<h3>header</h3>
+		<p>
+			header代表“网页”或者“section”的页眉，通常包含h1-h6 元素或者 hgroup, 作为整个页面或者一个内容快的标题。也可以包裹一节的目录部分，一个搜索框，一个nav，或者相关logo。
+		</p>
+		<nav>
+			<ul>
+				<li><a href="" title="">侧边栏上目录、面包屑导航、搜索样式、或者下一篇上一篇文章我们可能会想要用到nav，但是事实上规范上说nav只能用在页面主要导航部分上。</a></li>
+				<li><a href="" title="">页脚区域中的链接列表，虽然指向不同网站的不同区域，譬如服务条款，版权页等，这些footer元素就能够用了。</a></li>
+			</ul>
+		</nav>
+	</header><!-- /header -->
+	<article>
+		<h3>article</h3>
+		article 代表一个在文档，页面或者网站中自成一体的内容，其目的是为了让开发者独立开发或重用。
+除了它的内容，article会有一个标题(通常会在header里)，一个footer页脚。
+<h3>section</h3>
+		<section>
+			文章内section是独立的部分，但是它们只能算是组成整体的一部分，从属关系，article是大主体，section是构成这个大主体的一个部分。
+		</section>
+	</article>
+	<aside>
+		<h3>aside元素</h3>
+		aside 元素被包含在article元素中作为主要内容的附属信息部分，其中的内容可以是与当前文章有关的相关资料，标签，名词解释等。
+	</aside>
+	<footer>
+		<br>
+		总之，HTML语义化是<strong>反对</strong>大篇幅使用无语义化的div+span+class，而<em>鼓励</em>使用HTML定义好的语义化标签。
+	</footer>
+</body>
+</html>
