@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		padding-top: 30px;
+	}
+	.box{
+		position: relative;
+		width:300px;
+		height: 150px;
+		margin: 0 auto;
+		border:1px solid #000;
+		border-top-left-radius: 150px;
+		border-top-right-radius: 150px;
+		background:radial-gradient(30px 147px ellipse at bottom center,  red 30px,black 31px,transparent 32px),radial-gradient(80px 196px ellipse at bottom center,  green 60px,black 61px,transparent 62px),radial-gradient(120px 199px ellipse at bottom center,  yellow 90px,black 91px,transparent 92px),radial-gradient(160px 200px ellipse at bottom center,  skyblue 120px,black 121px,transparent 122px),radial-gradient(180px 180px ellipse at bottom center,  purple 150px,black 151px,transparent 152px);
+	}
+	.box:before{
+		content:"";
+		display: block;
+		position: absolute;
+		top:-20px;
+		left:50%;
+		width: 20px;
+		height: 20px;
+		margin-left: -10px;
+		border-radius: 50%;
+		border:1px solid #000;
+	}
+	.box:after{
+		content: "";
+		display: block;
+		position: absolute;
+		left:50%;
+		bottom:-200px;
+		width:1px;
+		height: 200px;
+		background: #000;
+	}
+	i{
+		position: absolute;
+		bottom:-220px;
+		left:50%;
+		width: 20px;
+		height: 20px;
+		border-bottom: 1px solid #000;
+		border-left:1px solid #000;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+
+	}
+</style>
+</head>
+<body>
+	<div class="box">
+		<i></i>
+	</div>
+</body>
+</html>
