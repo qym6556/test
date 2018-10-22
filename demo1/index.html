@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="hand" id="thumb">
+		<div class="finger"></div>
+		<div class="finger"></div>
+		<div class="finger"></div>
+		<div class="finger"></div>
+		<div class="finger"></div>
+		<div class="finger"></div>
+	</div>
+	<span class="hide" id="animation">+1</span>
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript" src="./system.js"></script>
+	<script src="./index.js"></script>
+	<script type="text/javascript" src="./scripts/thumb.js"></script>
+	<script type="text/javascript">
+		SystemJs.config({
+			baseURL: '/scripts'
+		});
+		SystemJs.import('index.js').then(function(m){
+			console.log(m);
+			$.extend({
+				thumb:m.default
+			})
+			callBack();
+		});
+		function callBack(){
+			var f = $.thumb(0,$('#thumb'));
+			f.clickAction();
+		}
+	</script>
+</body>
+</html>

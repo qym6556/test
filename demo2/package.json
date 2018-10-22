@@ -1,0 +1,25 @@
+{
+  "name": "demo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "co": "^4.6.0",
+    "koa": "^2.5.3",
+    "koa-simple-router": "^0.2.0",
+    "koa-static": "^5.0.0",
+    "koa-swig": "^2.2.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
